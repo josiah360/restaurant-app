@@ -1,0 +1,174 @@
+@import './fonts/inter.css';
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-brown: #614124;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 1em;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+nav {
+    background-color: #cc704b;
+    padding: 1em 4em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    column-gap: 1.5em;
+    padding: 0;
+    margin: 0;
+    color: #E8C07D;
+    align-items: center;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.nav-btn {
+    background-color: #614124;
+    padding: .8em 1.2em;
+    border-radius: .2em;
+}
+
+.content-div {
+    height: calc(100% - 52px);
+}
+
+/* -------- HOME ----------------- */
+
+.home {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.home .head-text {
+    margin-right: auto;
+    color: var(--dark-brown);
+}
+
+.home h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+.head-text p {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.home button {
+    background-color: var(--dark-brown);
+    border: 0;
+    padding: 1em 2em;
+    margin-top: 3em;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background .2s;
+}
+
+.home button:hover {
+    background-color: #ac7c50;
+}
+
+@keyframes move {
+    from {
+        transform: translate3d(0,30%,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.img-div {
+    animation: move .3s ease-in forwards;
+}
+
+.home img {
+    width: 600px;
+}
+
+
+
+/* --------- MENU ----------- */
+
+.menu {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    padding: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 390px;
+    grid-gap: 1em;
+
+}
+
+.menu-card {
+    background-color: rgb(255, 246, 235);
+    height: auto;
+}
+
+.menu figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #614124;
+}
+
+.menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu .text-wrapper {
+    padding: 1.5em;
+    color: var(--dark-brown);;
+}
+
+.menu h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.menu .meal-desc {
+    font-size: .9em;
+    margin: 10px 0;
+}
+
+.menu .price {
+    font-weight: 600;
+}
+
+.menu button {
+    background-color: var(--dark-brown);
+    border: 0;
+    padding: 1em 2em;
+    color: white;
+    font-size: .8em;
+    font-weight: bold;
+    transition: background .2s;
+}
+
