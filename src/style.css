@@ -35,6 +35,18 @@ nav li:first-child {
     margin-right: auto;
 }
 
+nav li:not(:first-child) {
+    cursor: pointer;
+}
+
+nav li:not(:first-child):hover {
+    color: #fcf0e5;
+}
+
+.active {
+    color: #fcf0e5;
+}
+
 .bold-text {
     font-weight: bold;
 }
@@ -102,7 +114,7 @@ nav li:first-child {
 }
 
 .img-div {
-    animation: move .3s ease-in forwards;
+    animation: move .3s ease-in backwards;
 }
 
 .home img {
@@ -156,6 +168,9 @@ nav li:first-child {
 .menu .meal-desc {
     font-size: .9em;
     margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .menu .price {
@@ -172,3 +187,12 @@ nav li:first-child {
     transition: background .2s;
 }
 
+
+/* ------------ CONTACT --------------- */
+
+.contact {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    color: var(--dark-brown);
+}

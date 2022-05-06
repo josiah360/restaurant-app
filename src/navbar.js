@@ -12,6 +12,7 @@ const logoSpan2 = document.createElement('span');
 logoSpan2.textContent = 'Meal';
 
 const homeLi = document.createElement('li');
+homeLi.classList.add('active');
 homeLi.textContent = 'Home';
 
 const menuLi = document.createElement('li');
